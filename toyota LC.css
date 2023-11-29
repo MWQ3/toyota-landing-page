@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@400;700&display=swap');
+
+/* root */
+
+:root {
+    --ff-oswald: 'Oswald', sans-serif;
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --clr-yellowish: #facd3d;
+}
+
+/* body */
+
+body {
+    /* height: auto;
+    min-height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*first page */
+
+.introduction {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f3175311d0845438a92ac35d/toyotaLandCruiserv82015exteriortme001bfull_tcm3046565874.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    padding-top: 390px;
+    min-height: 800px;
+}
+
+.spacing {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.first-page {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+
+
+.line-break {
+    display: inline-block;
+    width: 890px;
+    height: 10px;
+    background-color: #fff;
+}
+
+
+
+.first-page-content h1:nth-child(2) {
+    display: inline-block;
+    text-align: end;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.first-page-content h1:nth-child(3) {
+    color: #facd3d;
+    font-size: 6rem;
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.first-page-content h2 {
+    color: #fff;
+    font-family: var(--ff-oswald);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .introduction {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .spacing {
+        width: 800px;
+    }
+    
+    .line-break {
+        width: 500px;
+        margin-right: 8em;
+    }
+
+    .first-page-content h1:nth-child(2) {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .spacing {
+        width: fit-content;
+    }
+
+    .line-break {
+        width: 350px;
+        margin: 0;
+    }
+
+    .first-page-content h1:nth-child(2) {
+        margin-left: 0;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .first-page-content h1:nth-child(2) {
+        font-size: 3rem;
+    }
+
+    .first-page-content h1:nth-child(3) {
+        font-size: 3rem;
+    }
+
+    .line-break {
+        width: 250px;
+    }
+}
+
+/* second page */
+
+.info {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/0be4978e237b5b47a6267ff4/222.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
+    min-height: 890px;
+    background-color: #000000;
+}
+
+.second-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding-top: 5rem;
+    width: 1035px;
+    margin: 0 auto;
+}
+
+/* .left-info, .right-info {
+    border: 5px solid white;
+} */
+
+.left-info {
+    transform: translate(-60px);
+}
+
+.left-info h2, p {
+    color: #ffffff;
+}
+
+.left-info p {
+    margin-right: 70px;
+    margin-top: 100px;
+}
+
+.left-info h2 {
+    display: inline-block;
+    
+}
+
+.right-info {
+    padding-right: 4.5rem;
+}
+
+.right-info a p {
+    border-bottom: 2px solid var(--clr-yellowish);
+    margin-top: 48px;
+    width: fit-content;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.right-info a, a:link, a:active, a:visited {
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+}
+
+.right-info a:hover {
+    opacity: 0.9;
+}
+
+.second-page h2 {
+    font-family: var(--ff-oswald);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.second-page p {
+    font-family: var(--ff-open-sans);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.second-page h1 {
+    color: var(--clr-yellowish);
+    text-transform: uppercase;
+    font-family: var(--ff-oswald);
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.second-linebreak {
+    width: 73%;
+    height: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .info {
+        background-size: contain;
+        background-position: 0px 100%;
+    }
+
+    .left-info {
+        transform: none;
+    }
+    
+    .right-info p {
+        margin-bottom: -30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info {
+        background-size: cover;
+        background-position: 40%;
+    }
+
+    .second-page {
+        width: fit-content;
+        grid-template-columns: 350px 300px;
+        margin: 0 0 0 20px;
+    }
+
+    .second-linebreak {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .second-page {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+
+    .left-info p {
+        margin-top: 25px;
+    }
+
+    .second-page h1 {
+        font-size: 3.5rem;
+    }
+
+    .second-page h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* third page */
+
+.services-page {
+    background-color: #000000;
+    min-height: 650px;
+    padding-top: 80px;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+/* .services-top, .services-bot {
+    border: 2px solid #fff;
+} */
+
+.services-content h1, .services-content h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+}
+
+.services-content p {
+    font-family: var(--ff-open-sans);
+    line-height: 1.5;
+    font-size: 0.85rem;
+}
+
+.services-top {
+    text-align: end;
+}
+
+.services-linebreak {
+    width: 32%;
+    height: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.services-top h2 {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 2.2rem;
+}
+
+.services-top h1 {
+    color: var(--clr-yellowish);
+    font-size: 4.5rem;
+    margin-top: 10px;
+}
+
+.services-bot {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.services-bot h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+
+}
+
+.quality img, .comfort img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.services-bot img {
+    margin-bottom: 25px;
+}
+
+
+.services-bot > * {
+    /* border: 2px solid #fff; */
+    height: 280px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    .services-content {
+        padding: 0 100px;
+    }    
+}
+
+@media screen and (max-width: 900px) {
+    .services-bot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+
+    .services-content {
+        padding: 0 0 100px 0;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .services-bot {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        
+    }
+
+    .quality, .comfort, .quick, .qualified {
+        width: 300px;
+    }
+}
+
+/* fourth page */
+
+.fourth-page {
+    background-image: url('https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/2669ef9d0caf5f689249ff6e/toyotaLandCruiserv82015exteriortme006bfull_tcm3046565889.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 600px;
+    background-size: cover;
+    padding-top: 20rem;
+}
+
+.fourth-page-container {
+    width: 600px;
+    margin: 0 auto 0 200px;
+
+}
+
+.fourth-content h2 {
+    color: #ffffff;
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    display: inline-block;
+
+}
+
+.fourth-linebreak {
+    width: 60%;
+    height: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.fourth-content h1 {
+    color: var(--clr-yellowish);
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin: 0px 0 20px 0;
+}
+
+.fourth-content a, .fourth-content a:link:active:visited {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--ff-open-sans);
+    font-size: 1rem;
+    border-bottom: 2px solid var(--clr-yellowish);
+    width: fit-content;
+}
+
+.fourth-content a:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 850px) {
+    .fourth-page-container {
+        margin: 0 0 0 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .fourth-page-container {
+        width: 350px;
+    }
+
+    .fourth-page {
+        height: 750px;
+    }
+}
+
+
+/* fifth page */
+
+.fifth-page {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/25a7682a99fb5f9ba5685469/toyotaLandCruiserv82015interiortme015afull_tcm3046502788.png");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 850px;
+    background-color: #000000;
+}
+
+.fifth-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 65px 200px 0 0 ;
+}
+
+.fifth-content {
+    text-align: right;
+}
+
+.fifth-content h2 {
+    font-family: var(--ff-oswald);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.fifth-content h1 {
+    color: var(--clr-yellowish);
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    text-align: right;
+    transform: scale(1.1,1.1);
+}
+
+.fifth-linebreak {
+    width: 350px;
+    height: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.fifth-content a, .fifth-content a:active:visited:link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--ff-open-sans);
+    font-size: 1rem;
+    border-bottom: 2px solid var(--clr-yellowish);
+    width: fit-content;
+    padding-top: 30px;
+}
+
+.fifth-content a:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1200px) {
+    .fifth-container {
+        padding-top: 100px;
+        padding-right: 150px;
+    }
+    .fifth-page {
+        background-size: cover;
+        background-position: 0px 100px;
+        min-height: 950px;
+    }
+
+    .fifth-content h1 {
+        transform: none;
+    }
+
+    .fifth-linebreak {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .fifth-container {
+        padding: 60px 30px 0 0;
+    }
+
+    .fifth-page {
+        background-size: cover;
+        background-position: -50px 100px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .fifth-page {
+        background-size: cover;
+        background-position: 20% 50%;
+    }
+
+    .fifth-content h1 {
+        font-size: 3rem;
+    }
+
+    .fifth-linebreak {
+        width: 200px;
+    }
+
+    .fifth-content a {
+        padding-top: 0;
+    }
+}
+
+/* sixth page */
+
+.sixth-page {
+    background-color: #000000;
+    min-height: 500px;
+}
+
+.sixth-container {
+    padding: 100px 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.sixth-text {
+    margin-bottom: 100px;
+}
+
+.sixth-text h2 {
+    display: inline-block;
+    font-family: var(--ff-oswald);
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.sixth-linebreak {
+    width: 350px;
+    height: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.sixth-text h1 {
+    color: var(--clr-yellowish);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-family: var(--ff-oswald);
+    font-weight: bold;
+}
+
+.sixth-imgs {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    max-width: 100%;
+}
+
+
+
+
+/* .side-img, .back-img, .front-img {
+    width: 100%;
+} */
+
+.side-img img, .back-img img, .front-img img {
+    width: 345px;
+    height: 190px;
+    object-fit: contain;
+}
+
+.front-img {
+    padding-left: 27px;
+    transform: translateY(-10px);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .side-img img, .back-img img, .front-img img {
+        width: 280px;
+        height: 180px;
+    }
+    .sixth-text {
+        width: 490px;
+    }
+
+    .sixth-linebreak {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sixth-imgs {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .side-img img, .back-img img, .front-img img {
+        width: 500px;
+        height: 200px;
+        
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .side-img img, .back-img img, .front-img img {
+        width: 350px;
+        height: 150px;
+        
+    }
+
+    .sixth-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .sixth-text h1 {
+        font-size: 3rem;
+    }
+
+    .sixth-text {
+        width: 400px;
+    }
+
+    .sixth-linebreak {
+        width: 200px;
+    }
+}
+
+/* seventh page */
+
+.seventh-page {
+ min-height: 700px;
+}
+
+/* .seventh-content {
+    
+} */
+
+.top-imgs {
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: repeat(2, 1fr);
+
+    height: 500px;
+}
+
+.bottom-imgs {
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: repeat(2, 1fr);
+   
+
+}
+
+.top-left {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f682777224b85a4c9a979b72/toyotaLandCruiserv82015interiortme014afull_tcm3046502786.jpg");
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.top-right {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/0ab8f7aaa50e52568e87c5d7/toyotaLandCruiserv82015interiortme022bfull_tcm3046565894.jpg");
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.bottom-left {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/6ede5a78a7295c53a6004cc6/toyotaLandCruiserv82015interiortme021bfull_tcm3046565883.jpg");
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.bottom-right {
+    background-image: url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/69739e7ff911545bb018f74c/toyotaLandCruiserv82015exteriortme023bfull_tcm3046565899.jpg");
+    padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .top-imgs {
+        grid-template-columns: 1fr;
+        height: 700px;
+    }
+
+    .bottom-imgs {
+        grid-template-columns: 1fr;
+        height: 700px;
+    }
+}
+
+/* finale */
+
+.final-page {
+    min-height: 700px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/5e322cb038d5535d81837923/toyotaLandCruiserv82015interiortme013afull_tcm3046502784.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+}
+
+.final-container {
+    display: flex;
+}
+
+.final-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+label {
+    display: none;
+}
+
+.contact-us {
+width: 520px;
+}
+
+.contact-us h1 {
+    color: var(--clr-yellowish);
+    font-family: var(--ff-oswald);
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact-us p {
+    font-size: 0.9rem;
+    font-family: var(--ff-open-sans);
+}
+
+.icons {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.fa-brands {
+    margin: 0 5px;
+}
+
+.follow-toyota h2 {
+    color: #ffffff;
+    font-family: var(--ff-oswald);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 2.25rem;
+}
+
+.your-name, .your-email, .your-msg {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    margin-bottom: 20px;
+    
+}
+
+.follow-toyota input, .follow-toyota textarea {
+    background-color: transparent;
+    border: none;
+}
+
+::placeholder {
+    font-family: var(--ff-open-sans);
+    transform: scale(1, 1.1);
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+input, textarea {
+    color: #ffffff;
+    outline: none;
+    width: 100%;
+    padding: 10px 12px;
+}
+
+.final-btn {
+    width: fit-content;
+}
+
+.btn-small {
+    background-color: var(--clr-yellowish);
+    padding: 10px 30px;
+    border: none;
+    font-family: var(--ff-open-sans);
+}
+
+.btn-small:hover {
+    opacity: 0.9;
+    outline: none;
+}
+
+.icons a, .icons a:visited:active:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.icons a:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1200px) {
+    .final-content {
+        padding: 10rem 100px 0 100px;
+    }
+
+    .contact-us {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .final-content {
+        padding: 10rem 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .final-content {
+        grid-template-columns: 1fr;
+        padding: 7rem 20px 0 20px;
+    }
+
+    .contact-us {
+        width: auto;
+    }
+}
+
+
+
+
+
